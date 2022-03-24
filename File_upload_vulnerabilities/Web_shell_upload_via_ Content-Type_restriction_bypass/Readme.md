@@ -72,4 +72,4 @@ From the above image we can know our file has been uploaded to files/avatars/. L
 We got the Solution.
 
 # Conclution
-From this lab we gained the basic idea of how to Content-Type restriction bypass image upload function vunerablity.
+From this lab we gained the basic idea of how to Content type restriction bypass file upload function vunerablity.

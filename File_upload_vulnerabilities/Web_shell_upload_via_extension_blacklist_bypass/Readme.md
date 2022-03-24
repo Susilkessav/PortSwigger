@@ -73,3 +73,7 @@ Again switch to the tab which is containg GET request **/files/avatars/sus.l33t*
 akAmIgdkf1u17jW5osmlBm19uY0VS1KA
 ```
 Carlos's secret was retuned in the response.
+
+# Conclution
+
+From this lab we gained the basic idea of how to blacklist bypass restriction file upload function vunerablity.
