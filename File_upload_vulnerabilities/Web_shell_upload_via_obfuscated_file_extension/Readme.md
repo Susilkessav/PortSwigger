@@ -48,7 +48,7 @@ filename="sus.php%00.jpg"
 
 Send the request and observe that the file was successfully uploaded.
 
-Notice that thele as expl message refers to the sus.php, suggesting that the null byte and .jpg extension have been stripped.
+Notice that there is a message refers to the sus.php file, suggesting that the null byte and .jpg extension have been stripped.
 
 Now switch to the Repeater tab containing the **GET /files/avatars/<YOUR-IMAGE>** request. 
 
