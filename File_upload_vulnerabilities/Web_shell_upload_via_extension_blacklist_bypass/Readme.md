@@ -44,13 +44,15 @@ In HTTP history, you can fing a POST request **/my-account/avatar** which is use
 ![6_0](06.png)
 
 Now you have to make some changes to the request to bypass the blacklist restrictions.
-    1] Change filename parameters sus.php to .htaccess
-    2] Change Content-Type header to text/plain
-    3] Replace the content of the file: AddType application/x-httpd-php .l33t
+1. Change filename parameters sus.php to .htaccess.
+2. Change Content-Type header to text/plain.
+3. Replace the content of the file: ***addType application/x-httpd-php .l33t***.
 
 ```bash
 Content-Disposition: form-data; name="avatar"; filename=".htaccess"
 Content-Type: text/plain
+
+addType application/x-httpd-php .l33t
 ```
 
 [.l33t](https://thibaud-robin.fr/articles/bypass-filter-upload/) 
