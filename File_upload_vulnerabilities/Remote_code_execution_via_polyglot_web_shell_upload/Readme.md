@@ -1,16 +1,14 @@
 # Login
-![1_0](1.png)
+![1_0](01.png)
 We can log in to your own account using the following credentials: 
 ```bash
 wiener:peter
 ```
 ### We know this lab contains image upload function vunerablity. So lets start looking for it.
-
+We can upload the image file under Avatar lable
 # Information gathering
 
 ![2_0](02.png)
-
-We can upload the image file under Avatar lable.
 
 ![3_0](03.png)
 
