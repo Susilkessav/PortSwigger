@@ -6,8 +6,6 @@ wiener:peter
 ```
 # Information gathering
 
-![1_0](01.png)
-
 While proxying HTTP History in Burp, click "My account" in website. 
 You are taken to a normal login page, but notice that there is an option to log in using your social media profile. 
 
@@ -40,15 +38,19 @@ In BurpSuite in proxy HTTP history, go through the series of requests that happe
 
 Observe that the redirect_uri for this functionality sends the authorization code to /oauth-linking, Now notice that the request does not include a state parameter to protect against CSRF attacks.
 
+![6_0](06.png)
+
 Now turn on the Burp intercept and click on **Attach a social profile**
 
+![7_0](07.png)
+
 Go to Burp Proxy and forward any request untill you intercept request is **GET /oauth-linking?code=[...]**. Now right click on the request and select **Copy URL**
-
-
 
 DROP the request(This is important to ensure this **GET /oauth-linking?code=[...]** is not used but the code will be valid).
 
 Turn off the Burp intercept and log out from blog.
+
+![9_0](09.png)
 
 In website go to exploit server and create a [iframe](https://www.w3schools.com/tags/tag_iframe.asp) in which src attributes points to the url we just copied.
 
@@ -64,7 +66,6 @@ Go back to the blog website and select the "Log in with social media" option aga
 Observe that you are instantly logged in as the admin user. 
 
 Go to the admin panel and delete Carlos to solve the lab.
-
 
 Change to the BurpSuite proxy and click on "My account" and do the OAuth login proccess.
 
